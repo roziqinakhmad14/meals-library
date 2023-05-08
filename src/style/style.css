@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    color: #1B1A17;
+    font-family: 'Quicksand', sans-serif!important;
+    font-size: 18px;
+}
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+.card {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+}
+.clear {
+    clear: both;
+}
+header {
+    top: 0;
+    z-index: 99;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    background-color: #FF8303;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+}
+#logo {
+    font-size: 1.34em;
+    font-weight: 700;
+    float: left;
+    cursor: pointer;
+}
+search-bar {
+    float: right;
+}
+main {
+    margin-top: 90px;
+}
+.content {
+    float: left;
+    max-width: 920px;
+    width: 100%;
+    margin-right: 20px;
+}
+h2 {
+    margin: 0;
+}
+meals-display {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+meal-item {
+    display: flex;
+    width: 22.82%;
+    flex: 0 0 auto;
+    margin: 10px;
+    cursor: pointer;
+}
+meal-item:hover .meal-item, meal-detail img:hover {
+    box-shadow: 0 2px 20px 2px #FF8303;
+}
+ingredients-list li:hover, instructions-list li:hover {
+    background-color: #ff8103bb;
+    cursor: default;
+}
+meal-detail {
+    width: 100%;
+}
+meal-detail img {
+    width: 280px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    float: left;
+}
+h3 {
+    margin: 20px 0 0;
+}
+aside {
+    position: fixed;
+    right: 4%;
+    width: 280px;
+    background-color: #FF8303;
+}
+categories-list li:hover {
+    color: white;
+}
+hr {
+    border: 1px solid #1b1a1780;
+}
+h4 {
+    margin: 0;
+}
+nav li {
+    cursor: pointer;
+}
